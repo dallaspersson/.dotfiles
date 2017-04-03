@@ -3,10 +3,9 @@ function parse_git_branch {
   echo " ["${ref#refs/heads/}"]"
 }
 
-CLUSERHOST='\[\033[00;31m\]'
-CLPATH='\[\033[00;33m\]'
-CLGIT='\[\033[00;32m\]'
-CLCOLON='\[\033[00;37m\]'
+CLUSERHOST='\[\033[01;34m\]'
+CLPATH='\[\033[01;35m\]'
+CLGIT='\[\033[01;33m\]'
 CLRESET='\[\033[00m\]'
 PS1="$CLUSERHOST\u:$CLPATH\w$CLGIT\$(parse_git_branch)$CLRESET\\n$ "
 
