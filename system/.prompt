@@ -1,6 +1,6 @@
 function parse_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo " ("${ref#refs/heads/}")"
+  echo " ["${ref#refs/heads/}"]"
 }
 
 CLUSERHOST='\[\033[00;31m\]'
@@ -8,7 +8,7 @@ CLPATH='\[\033[00;33m\]'
 CLGIT='\[\033[00;32m\]'
 CLCOLON='\[\033[00;37m\]'
 CLRESET='\[\033[00m\]'
-PS1="$CLUSERHOST\u:$CLPATH\w$CLGIT\$(parse_git_branch)$CLRESET\\n> "
+PS1="$CLUSERHOST\u:$CLPATH\w$CLGIT\$(parse_git_branch)$CLRESET\\n$ "
 
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
