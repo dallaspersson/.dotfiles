@@ -15,13 +15,10 @@ brew install caskroom/cask/brew-cask
 # Install cask apps
 
 apps=(
-  atom
   iterm2
   git
   heroku-toolbelt
   spotify
-  slack
-  skype
   tunnelblick
 )
 

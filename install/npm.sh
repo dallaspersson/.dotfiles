@@ -10,7 +10,6 @@ nvm alias default 6.8.1
 # Globally install with npm
 
 packages=(
-  grunt-cli
   http-server
   nodemon
   release-it
