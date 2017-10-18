@@ -3,9 +3,9 @@ brew install nvm
 mkdir -p ~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-nvm install 6.8.1
-nvm use 6.8.1
-nvm alias default 6.8.1
+nvm install 8.4.0
+nvm use 8.4.0
+nvm alias default 8.4.0
 
 # Globally install with npm
 
